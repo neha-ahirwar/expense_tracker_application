@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    <!-- Other attributes for RecyclerView -->
+    android:layout_above="@+id/addBtn"
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="@string/add_transaction_description"/>
+
+    <!-- Other views, such as TextViews for balance, budget, and expense -->
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    <!-- Other attributes for balance TextView -->
+    android:layout_above="@+id/addBtn"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    <!-- Other attributes for budget TextView -->
+    android:layout_above="@+id/addBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    <!-- Other attributes for expense TextView -->
+    android:layout_above="@+id/addBtn"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"/>
+
+</RelativeLayout>
